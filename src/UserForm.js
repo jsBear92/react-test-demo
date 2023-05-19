@@ -8,6 +8,9 @@ const UserForm = ({ onUserAdd }) => {
         e.preventDefault();
 
         onUserAdd({ name, email });
+
+        setEmail('');
+        setName('');
     };
 
     return(
